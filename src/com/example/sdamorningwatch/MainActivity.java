@@ -43,11 +43,7 @@ public class MainActivity extends Activity {
 	private MorningWatchReader reader;
 	private DBController db;
 	
-	private final static String url = "jdbc:mysql://23.229.188.91:3306/morningWatch";
-	private final static String user = "watchUser";
-	private final static String password="whatpassword123";
-	
-    @Override
+	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);

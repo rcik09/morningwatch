@@ -11,9 +11,9 @@ import com.mysql.jdbc.Statement;
 
 public class DBController {
 
-	private final static String url = "jdbc:mysql://23.229.188.91:3306/morningWatch";
-	private final static String user = "watchuser";
-	private final static String password="whatpassword";
+	private final static String url = "jdbc:mysql://<address>/<database>";
+	private final static String user = "username";
+	private final static String password="password";
 	
 	//This class should not be synchronized
 	public DBController(){

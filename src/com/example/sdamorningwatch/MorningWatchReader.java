@@ -92,11 +92,11 @@ public class MorningWatchReader extends ListActivity{
 						//testList.add(eElement.getElementsByTagName("title").item(0).getTextContent());
 						listMorningWatchBO.add(morningWatchBO);
 						
-						System.out.println("Link : " + listMorningWatchBO.get(temp).getLink());
+						/*System.out.println("Link : " + listMorningWatchBO.get(temp).getLink());
 						System.out.println("Title : " + listMorningWatchBO.get(temp).getTitle());
 						System.out.println("Link : " + listMorningWatchBO.get(temp).getLink());
 						System.out.println("Description : " + listMorningWatchBO.get(temp).getDescription());
-						System.out.println("Subject : " + listMorningWatchBO.get(temp).getSubject());
+						System.out.println("Subject : " + listMorningWatchBO.get(temp).getSubject());*/
 			 
 					}
 				}

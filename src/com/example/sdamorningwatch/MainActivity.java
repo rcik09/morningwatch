@@ -9,8 +9,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Statement;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -35,20 +41,24 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 	private Handler handler;
 	private MorningWatchReader reader;
+	private DBController db;
+	
+	private final static String url = "jdbc:mysql://23.229.188.91:3306/morningWatch";
+	private final static String user = "watchUser";
+	private final static String password="whatpassword123";
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       
+        System.err.println("Before DB COnnection!!!!!!!!!!!");
         
         AsyncTaskMan async = new AsyncTaskMan();
         async.execute();
     }
         
   
-    
-    
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -76,6 +86,7 @@ public class MainActivity extends Activity {
 		@Override
 		protected ArrayList<MorningWatchBO> doInBackground(String... arg0) {
 			Looper.prepare();
+			DBController.getConnection();
 			 reader = new MorningWatchReader();
 			  
 			//Looper.loop();  

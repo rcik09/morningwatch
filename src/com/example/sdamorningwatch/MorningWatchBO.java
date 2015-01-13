@@ -2,7 +2,7 @@ package com.example.sdamorningwatch;
 
 public class MorningWatchBO {
 
-	private String link,title,description,subject,days;
+	private String link,title,description,subject,days,date,favourite;
 
 	public String getLink() {
 		return link;
@@ -42,6 +42,22 @@ public class MorningWatchBO {
 
 	public void setDays(String days) {
 		this.days = days;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public String getFavourite() {
+		return favourite;
+	}
+
+	public void setFavourite(String favourite) {
+		this.favourite = favourite;
 	}
 	
 	

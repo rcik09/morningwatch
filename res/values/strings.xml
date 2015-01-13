@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SDA Morning Watch</string>
+    <string name="app_name">Morning Watch</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_spalsh_screen">SDA Morning Watch</string>
-    <string name="title_activity_today">TodayActivity</string>
+    <string name="title_activity_today">Today</string>
+    <string name="splash_message">&quot;Thy word is a lamp unto my feet and a light unto my path.&quot;</string>
+    <string name="title_activity_active_verse">Verse Of The Day</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_section4">Section 4</string>
+    <string name="title_section5">Section 5</string>
+    <string name="title_section6">Section 6</string>
+    <string name="title_section7">Section 7</string>
+    <string name="title_activity_daily_verse">DailyVerse</string>
+    <string name="today">Today</string>
+    <string name="num_of_text"># verses read for the week</string>
+    <string name="day_num">Day #</string>
+    <string name="today_day">WeekDay</string>
+    <string name="today_date">2014-12-01</string>
+    <string name="share">SHARE</string>
+    <string name="favourite">ADD TO FAVOURITE</string>
+    <string name="title_activity_slide_menu">SlideMenu</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_closed">Closed</string>
+    <string name="weeklyVersesBtnLabel">Weekly Verses</string>
+    <string name="favouritesBtnLabel">Favourites</string>
+    <string name="aboutBtnLabel">About 
+        Morning Watch</string>
+    <string name="exitLabel">Exit</string>
 
 </resources>

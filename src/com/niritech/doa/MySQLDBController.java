@@ -1,4 +1,4 @@
-package com.example.sdamorningwatch;
+package com.niritech.doa;
 
 
 
@@ -6,17 +6,18 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.example.sdamorningwatch.MorningWatchBO;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 
-public class DBController {
+public class MySQLDBController {
 
 	private final static String url = "jdbc:mysql://<address>/<database>";
 	private final static String user = "username";
 	private final static String password="password";
 	
 	//This class should not be synchronized
-	public DBController(){
+	public MySQLDBController(){
 		
 		
 		

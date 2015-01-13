@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="13"
+        android:minSdkVersion="14"
         android:targetSdkVersion="18" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,7 +15,8 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:uiOptions="splitActionBarWhenNarrow" >
         <activity
             android:name="com.example.sdamorningwatch.SplashScreen"
             android:label="@string/title_activity_spalsh_screen"
@@ -29,15 +30,27 @@
         <activity
             android:name="com.example.sdamorningwatch.MainActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.example.sdamorningwatch.TodayActivity"
-            android:label="@string/title_activity_today" >
+            android:label="@string/title_activity_today"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.sdamorningwatch.ActiveVerse"
+            android:label="@string/title_activity_active_verse" >
+        </activity>
+        <activity
+            android:name="com.example.sdamorningwatch.DailyVerse"
+            android:label="@string/title_activity_daily_verse" >
+        </activity>
+        <activity
+            android:name="com.example.sdamorningwatch.SlideMenu"
+            android:label="@string/title_activity_slide_menu" >
+        </activity>
+        <activity
+            android:name="com.example.sdamorningwatch.AboutActivity"
+            android:label="@string/title_activity_about" >
         </activity>
     </application>
 

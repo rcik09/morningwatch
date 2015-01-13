@@ -12,7 +12,16 @@ public final class R {
         public static final int fadein=0x7f040000;
         public static final int fadeout=0x7f040001;
     }
+    public static final class array {
+        public static final int pref_example_list_titles=0x7f090000;
+        public static final int pref_example_list_values=0x7f090001;
+        public static final int pref_sync_frequency_titles=0x7f090002;
+        public static final int pref_sync_frequency_values=0x7f090003;
+    }
     public static final class attr {
+    }
+    public static final class color {
+        public static final int light_gray=0x7f060000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -21,42 +30,152 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int bookmark1=0x7f020000;
+        public static final int bookmark2=0x7f020001;
+        public static final int button_left_side_line=0x7f020002;
+        public static final int button_right_side_line=0x7f020003;
+        public static final int drawer_shadow=0x7f020004;
+        public static final int drop_shadow=0x7f020005;
+        public static final int exit=0x7f020006;
+        public static final int fav=0x7f020007;
+        public static final int favor=0x7f020008;
+        public static final int favor_selected=0x7f020009;
+        public static final int favourite=0x7f02000a;
+        public static final int home=0x7f02000b;
+        public static final int ic_drawer=0x7f02000c;
+        public static final int ic_launcher=0x7f02000d;
+        public static final int left_side_line=0x7f02000e;
+        public static final int loader_orange=0x7f02000f;
+        public static final int mwlogo_only=0x7f020010;
+        public static final int nav_bar_shadow=0x7f020011;
+        public static final int right_side_line=0x7f020012;
+        public static final int setting=0x7f020013;
+        public static final int splash=0x7f020014;
+        public static final int splashtext=0x7f020015;
+        public static final int tip_holder=0x7f020016;
+        public static final int top_shape=0x7f020017;
+        public static final int verses=0x7f020018;
     }
     public static final class id {
-        public static final int Days=0x7f090003;
-        public static final int action_settings=0x7f090007;
-        public static final int description=0x7f090005;
-        public static final int link=0x7f090006;
-        public static final int listView1=0x7f090000;
-        public static final int mainTitle=0x7f090004;
-        public static final int textView1=0x7f090001;
-        public static final int verseOfDay=0x7f090002;
+        public static final int Days=0x7f0c001f;
+        public static final int aboutBtn=0x7f0c001a;
+        public static final int action_settings=0x7f0c0024;
+        public static final int action_test=0x7f0c0025;
+        public static final int action_test2=0x7f0c0026;
+        public static final int bibleTip=0x7f0c0017;
+        public static final int button1=0x7f0c0006;
+        public static final int content_frame=0x7f0c0005;
+        public static final int description=0x7f0c0021;
+        public static final int description_single=0x7f0c0013;
+        public static final int drawer_layout=0x7f0c0004;
+        public static final int exitBtn=0x7f0c001b;
+        public static final int fav=0x7f0c0015;
+        public static final int favInList=0x7f0c0022;
+        public static final int favouritesBtn=0x7f0c0019;
+        public static final int iconItem=0x7f0c0008;
+        public static final int left_drawer=0x7f0c0007;
+        public static final int linearLayout1=0x7f0c001c;
+        public static final int link_single=0x7f0c001d;
+        public static final int listView2=0x7f0c0003;
+        public static final int mainTitle=0x7f0c0020;
+        public static final int mainTitle_singl=0x7f0c0012;
+        public static final int menuID=0x7f0c0002;
+        public static final int menuItemLabel=0x7f0c001e;
+        public static final int menuTitle=0x7f0c000e;
+        public static final int newlistshare=0x7f0c0023;
+        public static final int pager=0x7f0c0000;
+        public static final int pager_title_strip=0x7f0c0001;
+        public static final int progressBar1=0x7f0c0009;
+        public static final int relativeLayout1=0x7f0c000b;
+        public static final int relativeLayout2=0x7f0c000a;
+        public static final int relativeLayout3=0x7f0c000f;
+        public static final int share=0x7f0c0014;
+        public static final int textView2=0x7f0c0010;
+        public static final int textView3=0x7f0c0011;
+        public static final int tipTitle=0x7f0c0016;
+        public static final int todayActivity=0x7f0c000c;
+        public static final int verses_read=0x7f0c000d;
+        public static final int weeklyBtn=0x7f0c0018;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_splash_screen=0x7f030001;
-        public static final int activity_today=0x7f030002;
-        public static final int layout_template=0x7f030003;
-        public static final int morning_watch=0x7f030004;
+        public static final int activity_daily_verse=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_slide_menu=0x7f030002;
+        public static final int activity_splash_screen=0x7f030003;
+        public static final int activity_today=0x7f030004;
+        public static final int drawer_list_item=0x7f030005;
+        public static final int fragment_daily_verse_dummy=0x7f030006;
+        public static final int layout_template=0x7f030007;
+        public static final int menu_listview_template=0x7f030008;
+        public static final int morning_watch=0x7f030009;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
-        public static final int spalsh_screen=0x7f080001;
-        public static final int today=0x7f080002;
+        public static final int active_verse=0x7f0b0000;
+        public static final int daily_verse=0x7f0b0001;
+        public static final int main=0x7f0b0002;
+        public static final int slide_menu=0x7f0b0003;
+        public static final int spalsh_screen=0x7f0b0004;
+        public static final int today=0x7f0b0005;
     }
     public static final class string {
-        public static final int action_settings=0x7f060001;
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060002;
-        public static final int title_activity_spalsh_screen=0x7f060003;
-        public static final int title_activity_today=0x7f060004;
+        public static final int aboutBtnLabel=0x7f08001b;
+        public static final int action_settings=0x7f080001;
+        public static final int app_name=0x7f080000;
+        public static final int day_num=0x7f080011;
+        public static final int drawer_closed=0x7f080018;
+        public static final int drawer_open=0x7f080017;
+        public static final int exitLabel=0x7f08001c;
+        public static final int favourite=0x7f080015;
+        public static final int favouritesBtnLabel=0x7f08001a;
+        public static final int hello_world=0x7f080002;
+        public static final int num_of_text=0x7f080010;
+        public static final int pref_default_display_name=0x7f080022;
+        public static final int pref_description_social_recommendations=0x7f080020;
+        /**  Example settings for Data & Sync 
+         */
+        public static final int pref_header_data_sync=0x7f080024;
+        /**  Strings related to Settings 
+ Example General settings 
+         */
+        public static final int pref_header_general=0x7f08001e;
+        /**  Example settings for Notifications 
+         */
+        public static final int pref_header_notifications=0x7f080027;
+        public static final int pref_ringtone_silent=0x7f08002a;
+        public static final int pref_title_add_friends_to_messages=0x7f080023;
+        public static final int pref_title_display_name=0x7f080021;
+        public static final int pref_title_new_message_notifications=0x7f080028;
+        public static final int pref_title_ringtone=0x7f080029;
+        public static final int pref_title_social_recommendations=0x7f08001f;
+        public static final int pref_title_sync_frequency=0x7f080025;
+        public static final int pref_title_system_sync_settings=0x7f080026;
+        public static final int pref_title_vibrate=0x7f08002b;
+        public static final int share=0x7f080014;
+        public static final int splash_message=0x7f080005;
+        public static final int title_activity_about=0x7f08001d;
+        public static final int title_activity_active_verse=0x7f080006;
+        public static final int title_activity_daily_verse=0x7f08000e;
+        public static final int title_activity_slide_menu=0x7f080016;
+        public static final int title_activity_spalsh_screen=0x7f080003;
+        public static final int title_activity_today=0x7f080004;
+        public static final int title_section1=0x7f080007;
+        public static final int title_section2=0x7f080008;
+        public static final int title_section3=0x7f080009;
+        public static final int title_section4=0x7f08000a;
+        public static final int title_section5=0x7f08000b;
+        public static final int title_section6=0x7f08000c;
+        public static final int title_section7=0x7f08000d;
+        public static final int today=0x7f08000f;
+        public static final int today_date=0x7f080013;
+        public static final int today_day=0x7f080012;
+        public static final int weeklyVersesBtnLabel=0x7f080019;
     }
     public static final class style {
+        public static final int ActionTheme=0x7f0a0003;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -78,10 +197,18 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f0a0000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f0a0001;
+        public static final int CustomTheme=0x7f0a0002;
+    }
+    public static final class xml {
+        public static final int pref_data_sync=0x7f050000;
+        public static final int pref_general=0x7f050001;
+        public static final int pref_headers=0x7f050002;
+        public static final int pref_notification=0x7f050003;
+        public static final int progress=0x7f050004;
     }
 }

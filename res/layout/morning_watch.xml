@@ -1,61 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="5dp"
     android:paddingTop="5dp" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/Days"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-		 <TextView
-            android:id="@+id/Days"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:text="maintitle"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#003366"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-		 
-       
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingLeft="30dp"
+        android:text="maintitle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#272727"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-    </LinearLayout>
-	 <TextView
-            android:id="@+id/mainTitle"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:text="maintitle"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#003366"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Days"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:text="maintitle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#272727"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/description"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mainTitle"
         android:focusable="false"
         android:focusableInTouchMode="false"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="5dp"
         android:text="description"
-        android:textColor="#000000"
-        android:textSize="15sp" />
+        android:textColor="#646464"
+        android:textSize="21sp" />
+
+    <CheckBox
+        android:id="@+id/favInList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/newlistshare"
+        android:button="@drawable/favourite"
+        android:paddingLeft="47dp"
+        android:text="@string/favourite"
+        android:textColor="#747474"
+        android:typeface="normal" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/newlistshare"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/link"
-        android:layout_width="fill_parent"
+        android:id="@+id/newlistshare"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:gravity="right"
-        android:text="link"
-        android:textSize="12sp" />
+        android:layout_alignBaseline="@+id/favInList"
+        android:layout_alignBottom="@+id/favInList"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:text="@string/share"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#747474" />
 
-</LinearLayout>
+</RelativeLayout>
